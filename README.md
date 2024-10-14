@@ -27,14 +27,61 @@ Simple bash script to remove all docker :
 2. Delete all container and images 
 3. Delete all volumes
 
-# How ? 
+# Usage
 
-1. Download [`dockerREM.sh`](./dockerREM.sh)
+File | OS 
+--- | --- 
+[`docker_cleanup.sh`](./filez/docker_cleanup.sh) | For `*nix`
+[`docker_cleanup.ps1`](./filez/docker_cleanup.ps1) | For `Windows Powershell` 
+
+## For `*nix` 
+
+1. Download [`docker_cleanup.sh`](./filez/docker_cleanup.sh) - _Bash Script_
+
 2. Execute 
 
 ```js 
 bash dockerREM.sh
+``` 
+
+## Fow `Windows`
+
+1. Download [`docker_cleanup.ps1`](./filez/docker_cleanup.ps1) - _Powershell Script_
+
+2. You might need to alter `Set-ExecutionPolicy` - You will need a powershell with `Admin` previliges (right click `Run as Administrator`). Then enter the following 
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
 ```
+3. Then run
+
+```powershell
+./script.ps1
+```
+- This should perform the operations
+
+- After this is done set it back to `restricted` for security
+
+> [!WARNING]
+> Please ensure you are changing the policy for the desired used
+
+```powershell 
+Get-ExecutionPolicy
+```
+- this should now show `RemoteSigned`
+- Then do the following and enter `Restricted`
+
+```powershell
+ ❯ Set-ExcutionPolicy -Scope CurrentUser
+---
+cmdlet Set-ExecutionPolicy at command pipeline position 1
+Supply values for the following parameters:
+ExecutionPolicy: Restricted
+---
+❯ Get-ExecutionPolicy
+Restricted
+```
+
 
 # License 
 
