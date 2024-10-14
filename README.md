@@ -12,7 +12,9 @@
 <h2 align="center"><i> Bash Script to remove docker elements </i></h2>
 
 1. [What ?](#what-)
-2. [How ?](#how-)
+2. [Usage](#usage)
+   1. [For `*nix`](#for-nix)
+   2. [Fow `Windows`](#fow-windows)
 3. [License](#license)
 
 
@@ -29,10 +31,10 @@ Simple bash script to remove all docker :
 
 # Usage
 
-File | OS 
---- | --- 
-[`docker_cleanup.sh`](./filez/docker_cleanup.sh) | For `*nix`
-[`docker_cleanup.ps1`](./filez/docker_cleanup.ps1) | For `Windows Powershell` 
+| File                                               | OS                       |
+| -------------------------------------------------- | ------------------------ |
+| [`docker_cleanup.sh`](./filez/docker_cleanup.sh)   | For `*nix`               |
+| [`docker_cleanup.ps1`](./filez/docker_cleanup.ps1) | For `Windows Powershell` |
 
 ## For `*nix` 
 
