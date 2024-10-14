@@ -63,7 +63,7 @@ Set-ExecutionPolicy RemoteSigned
 - After this is done set it back to `restricted` for security
 
 > [!WARNING]
-> Please ensure you are changing the policy for the desired used
+> Please ensure you are changing the policy for the correct `user`
 
 ```powershell 
 Get-ExecutionPolicy
