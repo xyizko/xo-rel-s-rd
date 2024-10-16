@@ -59,7 +59,7 @@ Set-ExecutionPolicy RemoteSigned
 3. Then run
 
 ```powershell
-./script.ps1
+./docker_cleanup.ps1
 ```
 - This should perform the operations
 
@@ -84,6 +84,14 @@ ExecutionPolicy: Restricted
 ❯ Get-ExecutionPolicy
 Restricted
 ```
+
+## Execution without downloading (LINUX ONLY)
+
+```js 
+curl -L https://raw.githubusercontent.com/xyizko/xo-rel-s-rd/refs/heads/main/filez/docker_cleanup.sh
+```
+- Will execute the script without downloading 
+- Handy if you set this up as an alias, and can be used in any linux session
 
 
 # License 
